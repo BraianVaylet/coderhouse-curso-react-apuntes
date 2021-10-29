@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <div id='form'></div>        
+</body>
+
+<script>
+    // Este Array de elementos conforman el formulario.
+    const inputsForm = [
+        {
+            label: 'Nombre',
+            name: 'name',
+            type: 'text',
+            required: true
+        },
+        {
+            label: 'Apellido',
+            name: 'lastname',
+            type: 'text',
+            required: true
+        },
+        {
+            label: 'Correo elctronico',
+            name: 'email',
+            type: 'email',
+            required: true
+        },
+        {
+            label: 'Contraseña',
+            name: 'password',
+            type: 'password',
+            required: true
+        },
+        {
+            label: 'Dirección',
+            name: 'address',
+            type: 'text',
+            required: false,
+            class: 'success'
+        }
+    ]
+
+    // Este método va a renderizar el componente Form.
+    const Form = inputsForm => {  
+        let inputs = ''
+        inputsForm.forEach(input => inputs = inputs + Input(input))
+        return `
+            <form onsubmit='handleSubmit(event)'>                                
+                ${inputs}
+                <button type='submit'>Send!</button>
+            </form>
+        `
+    }
+    
+    // Este método va a renderizar el componente Input.
+    const Input = data => {
+        return `
+            <section ${data.class ? `class='${data.class}'` : ''}>
+                <label for='${data.name}'>${data.label}</label>
+                <input 
+                    id='${data.name}'
+                    name='${data.name}'
+                    type='${data.type}'
+                    ${data.required && 'required'}
+                />
+            </section>
+        `
+    }
+
+    // Este método va a controlar el sumbit del formulario.
+    const handleSubmit = event => {                
+        event.preventDefault();
+        let response = {}
+        inputsForm.forEach(input => {
+            const value = document.getElementById(input.name).value
+            response[input.name] = value
+        })
+        console.table(response)
+    }
+
+    // Este método va a renderizar mi componente en el html.
+    const render = (component, container) => container.innerHTML = component
+
+    // renderizo la aplicación
+    render(Form(inputsForm), form)
+</script>
+
+<style>
+    /* Algunos estilos para que se vea menos feo */
+    body {
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        letter-spacing: 2px;
+        font-weight: 900;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+        background-color: lavender;
+    }
+
+    #form section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+
+    #form section label {
+        letter-spacing: 1px;
+        font-weight: 100;
+        margin-right: 20px;
+    }
+
+    #form section input {
+        letter-spacing: 1px;
+        font-weight: 100;
+        border: 1px solid #ccc;
+    }
+
+    #form button[type=submit] {
+        background-color: lightcoral;
+        padding: 10px 20px;
+        border-style: none;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .success label {
+        background-color: greenyellow;
+    }
+</style>
+
+</html>
