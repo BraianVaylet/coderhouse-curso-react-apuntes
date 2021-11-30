@@ -2,26 +2,26 @@
 
 ## Notas de clases
 
-**Clase 1:** [Nivelación](https://drive.google.com/drive/u/0/folders/1jJDT1cQBUegH0pKKI2HDfu3Ag1sqXdpS)
+**Clase 1:** [Nivelación](https://docs.google.com/presentation/d/1AUo7rwtvlPoGXHbF6XyyKwGM14rOQP6A-aFGKXB1LU0/edit#slide=id.gb1856c1e7b_1_0)
 > Ejercicio de la clase: crear formulario.
 
-**Clase 2:** [Instalación y configuración del entorno](https://drive.google.com/drive/u/0/folders/1hbGho5HA1TTwOp8V8BlPs4tsXXLInHK8)
+**Clase 2:** [Instalación y configuración del entorno](https://docs.google.com/presentation/d/1huUoDgqE_nE7WLRDclJvJqCvxmjV6x2umj8smhBvQUc/edit#slide=id.ga9071a1c49_0_12)
 > Creacion primer proyecto en react.
 
-**Clase 3:** [JSX & transpiling](https://drive.google.com/drive/u/0/folders/1YcZqA97VmXm6xO22saOEvwo0r8zzC1SI)
+**Clase 3:** [JSX & transpiling](https://docs.google.com/presentation/d/12SEaNBkeY6mioaLtC1gcCJY4ZBp-EnDqZ2BgrmNT7zQ/edit#slide=id.gb174719011_0_166)
 > Sugar Syntax (es6 al es10).
 
-**Clase 4:** [Componentes I](https://drive.google.com/drive/u/0/folders/1JHBufmT5TLe3J4Pr5m107ygd0IOYdSic)
+**Clase 4:** [Componentes I](https://docs.google.com/presentation/d/1erq9nnVffGYswnYP3mcXsmlFc6cvO1nbu1Ql8cFJZls/edit#slide=id.ga90c0f760b_0_12)
 > ...
 
-**Clase 5:** [Componentes II](https://drive.google.com/drive/u/0/folders/1puPtvQHV6FLpJiVgK6T4x8krS5Xo1Zst)
+**Clase 5:** [Componentes II](https://docs.google.com/presentation/d/1FIwS8bJS0DuenG0aDcwcuNdQ4mm1zlDPyYoKPqNXqFc/edit#slide=id.ga9120ea362_0_12)
 > Componente Contador con useState.
 
-**Clase 6:** [Promises, asincronía y MAP](https://drive.google.com/drive/u/0/folders/1444FvRR_UPn6xH5I48D0lL96UKENBy0M)
+**Clase 6:** [Promises, asincronía y MAP](https://docs.google.com/presentation/d/1yVyPTlLzDJltwLmFacnV634nmrdv6KP_xGEvaZN_fB0/edit#slide=id.ga90e52debd_0_12)
 > Ejercicio de la clase: Crear una promesa.
 > Ejemplo en React, usando promesas y async-await.
 
-**Clase 7:** [Consumiendo API's](https://drive.google.com/drive/u/0/folders/15n8cVB2rIQQvEfo8PXYBYon7FSckoyCD)
+**Clase 7:** [Consumiendo API's](https://docs.google.com/presentation/d/1HQhxXHFhOXi5McK7zyAwy4vEEG7zZf6MROVANQ8-IdM/edit#slide=id.ga7f381865f_1_12)
 > Ejercicio de la clase: Consumir la [pokeApi](https://pokeapi.co/) usando Fetch.
 
 ---
