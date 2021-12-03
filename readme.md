@@ -26,6 +26,14 @@
 
 ---
 
+## Notas
+
+**Agregar imagenes al proyecto:** [react-ejemplo-imagenes](https://github.com/BraianVaylet/coderhouse-curso-react-apuntes/tree/master/_react-ejemplo-imagenes)
+
+**Arquitecturas componentes:** [arquitecturas](https://github.com/BraianVaylet/coderhouse-curso-react-apuntes/tree/master/_arquitectura-componentes)
+
+---
+
 ## Proyecto e-commerce
 
 > Buenas a todos, decidí desarrollar de forma muy simple el proyecto del e-commerce siguiendo cada desafío y documentando paso a paso lo que fui haciendo. La idea es que les pueda servir de guía, o como ejemplo solo cuando lo necesiten.
