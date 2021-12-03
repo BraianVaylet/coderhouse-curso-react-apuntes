@@ -1,4 +1,26 @@
-# Getting Started with Create React App
+# Importar imagenes locales en React.js
+
+## Para mostrar una imagen el React js, tienes dos formas sencillas de hacerlo.
+ 
+ - Importar la imagen usando 'import'.
+ - Alojar la imagen en un servidor remoto o local y utilizar la url.
+
+### Ventajas de importar la imagen:
+
+- Tenes más control sobre las imágenes
+- Podes guardarlas como en este [ejemplo](https://github.com/BraianVaylet/coderhouse-curso-react-apuntes/blob/master/_react-ejemplo-imagenes/src/assets/images/index.js) en un objeto y nutrirlas de mas propiedades, en este caso le agregamos un nombre que luego usaremos para mostrarlo en el atributo alt de la etiqueta img.
+- Es más simple de depurar, sabes donde están todas las imágenes si en el futuro tenes que cambiar una de ella o agregar otras.
+- etc... Todas las ventajas que se te ocurran
+- Una práctica que se suele ver mucho en la industria es tener un archivo en el cual se van a importar todas las imágenes dentro de un objeto o array, luego este se importa en los componentes donde se necesiten...
+
+### Ejemplo:
+
+- Para este ejemplo tenemos un fichero **assets** donde tenemos otro llamado **images** el cual tiene guardadas las imágenes w1.jpg, w2.jpg, w3.jpg.
+- En el fichero **images** tenemos también un archivo [**index.js**](https://github.com/BraianVaylet/coderhouse-curso-react-apuntes/blob/master/_react-ejemplo-imagenes/src/assets/images/index.js) en el cual se importan las imagenes y se exporta un objeto.
+- En el archivo [**App.js**](https://github.com/BraianVaylet/coderhouse-curso-react-apuntes/blob/master/_react-ejemplo-imagenes/src/App.js) vamos a hacer uso de esas imagenes, primero las importamos como figura en la linea 3 y luego para este ejemplo creamos un array con ellas para luego usando un map mostrarlas todas.
+- Para renderizar las imágenes creamos un componente [**CustomImage**](https://github.com/BraianVaylet/coderhouse-curso-react-apuntes/tree/master/_react-ejemplo-imagenes/src/components/CustomImage) para poder reutilizar el codigo. 
+
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
