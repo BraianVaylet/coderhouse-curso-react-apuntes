@@ -15,8 +15,8 @@ function testPromise(status) {
         : reject('Reject')   
       , 3000)        
   })
-    .then(response => console.log(response))
-    .catch(error => console.log(error))
+    .then(response => console.log(`promise:resolve`, response), err => console.log(`promise:reject`, err))
+    .catch(error => console.log(`promise:error`, error))
 }
 
 testPromise(true)

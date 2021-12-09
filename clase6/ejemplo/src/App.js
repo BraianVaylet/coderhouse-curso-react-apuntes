@@ -30,12 +30,21 @@ function App() {
    * const helloPromise = () => new Promise((resolve, reject) => true ? resolve('todo ok') : reject('todo mal'))
    *
    * helloPromise()
-   *   .then(res => console.log('res', res))
+   *   .then(
+   *     res => console.log('promise resolve', res),
+   *     err => console.log('promise reject', err)
+   *   )
    *   .catch(err => console.log('err', err))
    */
   const setProductsPromise = () => {
     getProducts()
-      .then(response => setMisProductos(response))
+      .then(
+        response => {
+          console.log(`Promise RESOLVE`, response)
+          setMisProductos(response)
+        },
+        error => console.log(`Promise REJECT`, error)
+      )
       .catch(error => console.log(`ERROR`, 'Algo malio sal', error))
   }
 
